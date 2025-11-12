@@ -1,0 +1,6 @@
+ttkbootstrap
+cryptography
+requests
+beautifulsoup4
+pycryptodome
+pyinstaller
