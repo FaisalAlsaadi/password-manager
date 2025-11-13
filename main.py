@@ -1,17 +1,25 @@
-def patch_ttkbootstrap_msgcat():
-    try:
-        import ttkbootstrap.localization.msgs as msgs
-        _original = msgs.initialize_localities
-        def safe_init():
-            try:
-                _original()
-            except:
-                pass
-        msgs.initialize_localities = safe_init
-    except:
-        pass
+import sys
+import os
 
-patch_ttkbootstrap_msgcat()
+if True:  
+
+    import importlib.util
+    spec = importlib.util.find_spec("ttkbootstrap.localization.msgs")
+    if spec:
+        msgs_module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(msgs_module)
+        
+        original_init = msgs_module.initialize_localities
+        def patched_init():
+            try:
+                original_init()
+            except Exception as e:
+                if 'msgcat' in str(e):
+                    pass  
+                else:
+                    raise
+        msgs_module.initialize_localities = patched_init
+        sys.modules['ttkbootstrap.localization.msgs'] = msgs_module
 
 import json
 import random
