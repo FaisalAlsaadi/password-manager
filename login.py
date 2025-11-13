@@ -1,24 +1,3 @@
-import sys
-import os
-
-if True:  
-    import importlib.util
-    spec = importlib.util.find_spec("ttkbootstrap.localization.msgs")
-    if spec:
-        msgs_module = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(msgs_module)
-        
-        original_init = msgs_module.initialize_localities
-        def patched_init():
-            try:
-                original_init()
-            except Exception as e:
-                if 'msgcat' in str(e):
-                    pass 
-                else:
-                    raise
-        msgs_module.initialize_localities = patched_init
-        sys.modules['ttkbootstrap.localization.msgs'] = msgs_module
 
 import time
 import tkinter as tk
