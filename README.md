@@ -11,7 +11,7 @@ Sleek interface — various theme options are included
 
 Local profile storage
 
-Password strength indicator including common password detection based on the most common 100,000 passwords compiled by Troy Hunt of Have I Been Pawned,
+Password strength indicator including common password detection based on the most common 100,000 passwords compiled by Troy Hunt of the Have I Been Pawned team,
 found here: https://github.com/danielmiessler/SecLists/tree/master/Passwords/Common-Credentials
 ## Login & Profile Creation
 <p align="center">
