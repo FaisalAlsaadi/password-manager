@@ -9,7 +9,9 @@ for all user emails/passwords to check if they are in any breaches
 
 Sleek interface — various theme options are included
 
-Password strength indicator including common password detection based on the most common 100,000 passwords compiled by Troy Hunt of Have I Been Pawned
+Local profile storage
+
+Password strength indicator including common password detection based on the most common 100,000 passwords compiled by Troy Hunt of Have I Been Pawned,
 found here: https://github.com/danielmiessler/SecLists/tree/master/Passwords/Common-Credentials
 
-Local profile storage
+
