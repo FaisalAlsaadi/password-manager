@@ -1,13 +1,14 @@
-A Python Tkinter-module based GUI password generator/manager:
+Python Tkinter-module based GUI Password Generator/Manager
 
-    - Encrypted with AES-256 using the profile password
-    
-    - Have I been Pawned intergration: if API key is provided in the settings
-    pressing "Check Accounts" or "Check Passwords" queries the HIBP database for all user 
-    emails/passwords to check if they are in any breaches
-    
-    - Sleek inteface, Various theme options are included
-    
-    - Password strength indicator
-    
-    - Local profile storage
+Encrypted with AES-256 using the profile password
+
+Have I Been Pwned integration:
+If an API key is provided in the settings, pressing
+"Check Accounts" or "Check Passwords" queries the HIBP database
+for all user emails/passwords to check if they are in any breaches
+
+Sleek interface — various theme options are included
+
+Password strength indicator
+
+Local profile storage
