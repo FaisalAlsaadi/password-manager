@@ -1,5 +1,3 @@
-
-
 import json
 import random
 import os
@@ -28,6 +26,15 @@ capital_letters_list = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', '
 symbols_list = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '=', '+',
                 '[', ']', '{', '}', '|', '\\', ';', ':', "'", '"', ',', '.', '<', '>',
                 '/', '?', '~', '`']
+
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
 
 
 def read_file():
@@ -842,7 +849,7 @@ def check_all_accounts():
 def check_password_strength(password):
     common_passwords = set()
     try:
-        with open('common_passwords.txt', 'r') as f:
+        with open(resource_path('common_passwords.txt'), 'r') as f:
             common_passwords = set(line.strip() for line in f)
     except:
         pass
