@@ -9,6 +9,7 @@ for all user emails/passwords to check if they are in any breaches
 
 Sleek interface — various theme options are included
 
-Password strength indicator including common password detection based on https://github.com/danielmiessler/SecLists/tree/master/Passwords/Common-Credentials
+Password strength indicator including common password detection based on the most common 100,000 passwords compiled by Troy Hunt and used by the UK's National Cyber Security Centre
+found here: https://github.com/danielmiessler/SecLists/tree/master/Passwords/Common-Credentials
 
 Local profile storage
