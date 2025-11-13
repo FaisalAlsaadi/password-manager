@@ -1,6 +1,6 @@
 Python Tkinter-module based GUI Password Generator/Manager
 
-Encrypted with AES-256 using the profile password
+User information encrypted with AES-256 using the profile password
 
 Have I Been Pwned integration:
 If an API key is provided in the settings, pressing
