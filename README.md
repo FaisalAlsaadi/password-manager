@@ -30,11 +30,12 @@ found here: https://github.com/danielmiessler/SecLists/tree/master/Passwords/Com
 
 ---
 
-## Have I Been Pwned API
+## Have I Been Pwned API and Latest Breach News
 <p align="center">
   <img src="images/6.png" width="400">
   <img src="images/7.png" width="400">
   <img src="images/8.png" width="400">
+  <img src="images/14.png" width="400">
 </p>
 
 ---
@@ -51,5 +52,6 @@ found here: https://github.com/danielmiessler/SecLists/tree/master/Passwords/Com
   <img src="images/9.png" width="400">
   <img src="images/11.png" width="400">
   <img src="images/12.png" width="400">
+  <img src="images/13.png" width="400">
 </p>
 
